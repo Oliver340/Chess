@@ -16,7 +16,7 @@ def OnButtonClick(buttonid):
             selected = True
         if turn == 'b' and str(board[buttonid]) in ['pyimage2','pyimage4','pyimage6','pyimage8','pyimage10','pyimage12']:
             selected = True
-    elif selected == True:
+    elif selected == True and buttonid != piece:
         board[buttonid] = board[piece]
         board[piece] = None
         selected = False
